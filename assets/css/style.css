@@ -1,0 +1,78 @@
+body{
+    height: 100vh;
+    background-color: black;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding:32px 24px ;
+    font-family: 'Roboto' , sans-serif;
+}
+body::after{
+    position: absolute;
+    display: block;
+    background-color: black;
+    inset: 0;
+    z-index: -1;
+}
+header{
+    height: 150px;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+.conteudo-container{
+    color:black;
+}
+.conteudo-container h1{
+    width: 230px;
+}
+.conteudo-container p{
+    width: 300px;
+}
+main h3{
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    
+}
+.cadastro{
+    flex-grow: 1;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    width: 75vw;
+}
+input{
+    color:black;
+    width: 100vw;
+    background: transparent;
+    border-color: transparent;
+    height: 40px;
+}
+::placeholder{
+    color:black;
+}
+footer{
+    gap: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer h2{
+    font-size: 12px;
+    color:black;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+footer h3{
+    font-weight: 10;
+    font-size: 15px;
+    color:black;
+}

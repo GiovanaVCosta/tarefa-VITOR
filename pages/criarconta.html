@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <script src="../js/criarconta.js"></script>
+    <link rel="stylesheet" href="../css/criarconta.css">
+</head>
+<body>
+    <div class="container">
+        <img src="../img/volte.png" alt="">
+        <h1>Criar Conta</h1>
+        <form>
+           
+            <div class="form-group">
+                <label for="nome">Nome de usuário</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Endereço de e-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="">Confirmação da senha</label>
+                <input type="password" id="ccomfirmar" name="comfirmar" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            
+        
+            <button id="criarConta" type="button" class="botao" onclick="redirecionarParaLogin">ENTRAR</button>
+        </form>
+    </div>
+
+    <script>
+        function redirecionarParaLogin() {
+            window.location.href = "../login.html";
+        }
+    </script>
+</body>
+</html>
